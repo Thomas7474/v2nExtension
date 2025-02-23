@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v2n</title>
+  <script src="popup.js" defer></script>
+  <style>
+    /* General Styling */
+    body {
+      width: 400px;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+      color: #4a0072;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #6a0080;
+    }
+
+    /* Styled Button */
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #a566cc;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #8b50b5;
+      transform: scale(1.05);
+    }
+
+    /* Styled Textarea */
+    textarea {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 14px;
+      background: #f3e5f5;
+      color: #4a0072;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+      resize: none;
+    }
+
+    /* Button Container */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.jpg" alt="" style="border-radius: 50%; max-height: 100px; max-width: 100px;">
+  <div class="button-container">
+    <button id="generate">Generate Transcript</button>
+    <textarea id="transcript" readonly placeholder="Your transcript will appear here..."></textarea>
+    <button id="download">Download PDF</button>
+  </div>
+</body>
+</html>
